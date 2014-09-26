@@ -413,6 +413,7 @@
 				16A5B2C219D5A19D0006E9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16A5B2C319D5A19D0006E9F3 /* Build configuration list for PBXNativeTarget "bazingalocalTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				16A5B2C519D5A19D0006E9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
