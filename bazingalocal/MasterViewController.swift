@@ -114,6 +114,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         let fetchRequest = NSFetchRequest()
         // Edit the entity name as appropriate.
+            let appDelegate  = UIApplication.sharedApplication().delegate as AppDelegate
+            self.managedObjectContext =  appDelegate.managedObjectContext
+            
         let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
         
