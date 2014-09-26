@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		16A5B2A219D5A19D0006E9F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2A119D5A19D0006E9F3 /* AppDelegate.swift */; };
-		16A5B2A519D5A19D0006E9F3 /* bazingalocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2A319D5A19D0006E9F3 /* bazingalocal.xcdatamodeld */; };
 		16A5B2A719D5A19D0006E9F3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2A619D5A19D0006E9F3 /* MasterViewController.swift */; };
 		16A5B2A919D5A19D0006E9F3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2A819D5A19D0006E9F3 /* DetailViewController.swift */; };
 		16A5B2AC19D5A19D0006E9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B2AA19D5A19D0006E9F3 /* Main.storyboard */; };
 		16A5B2AE19D5A19D0006E9F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B2AD19D5A19D0006E9F3 /* Images.xcassets */; };
 		16A5B2B119D5A19D0006E9F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B2AF19D5A19D0006E9F3 /* LaunchScreen.xib */; };
 		16A5B2BD19D5A19D0006E9F3 /* bazingalocalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2BC19D5A19D0006E9F3 /* bazingalocalTests.swift */; };
-		FD448DE919D5BFA000690F27 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD448DE719D5BFA000690F27 /* Model.xcdatamodeld */; };
+		FD448DE919D5BFA000690F27 /* bazingalocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD448DE719D5BFA000690F27 /* bazingalocal.xcdatamodeld */; };
+		FD448DEB19D5DC7800690F27 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD448DEA19D5DC7800690F27 /* Medication.swift */; };
+		FD448DED19D5E54E00690F27 /* bazingalocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD448DEC19D5E54E00690F27 /* bazingalocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		16A5B29C19D5A19D0006E9F3 /* bazingalocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bazingalocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A5B2A019D5A19D0006E9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A5B2A119D5A19D0006E9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16A5B2A419D5A19D0006E9F3 /* bazingalocal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bazingalocal.xcdatamodel; sourceTree = "<group>"; };
 		16A5B2A619D5A19D0006E9F3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		16A5B2A819D5A19D0006E9F3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		16A5B2AB19D5A19D0006E9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,7 +41,9 @@
 		16A5B2B619D5A19D0006E9F3 /* bazingalocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bazingalocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A5B2BB19D5A19D0006E9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A5B2BC19D5A19D0006E9F3 /* bazingalocalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bazingalocalTests.swift; sourceTree = "<group>"; };
-		FD448DE819D5BFA000690F27 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FD448DE819D5BFA000690F27 /* bazingalocal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bazingalocal.xcdatamodel; sourceTree = "<group>"; };
+		FD448DEA19D5DC7800690F27 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		FD448DEC19D5E54E00690F27 /* bazingalocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bazingalocal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +87,14 @@
 			children = (
 				16A5B2A119D5A19D0006E9F3 /* AppDelegate.swift */,
 				16A5B2A619D5A19D0006E9F3 /* MasterViewController.swift */,
-				FD448DE719D5BFA000690F27 /* Model.xcdatamodeld */,
+				FD448DE719D5BFA000690F27 /* bazingalocal.xcdatamodeld */,
+				FD448DEC19D5E54E00690F27 /* bazingalocal.swift */,
 				16A5B2A819D5A19D0006E9F3 /* DetailViewController.swift */,
 				16A5B2AA19D5A19D0006E9F3 /* Main.storyboard */,
 				16A5B2AD19D5A19D0006E9F3 /* Images.xcassets */,
 				16A5B2AF19D5A19D0006E9F3 /* LaunchScreen.xib */,
-				16A5B2A319D5A19D0006E9F3 /* bazingalocal.xcdatamodeld */,
 				16A5B29F19D5A19D0006E9F3 /* Supporting Files */,
+				FD448DEA19D5DC7800690F27 /* Medication.swift */,
 			);
 			path = bazingalocal;
 			sourceTree = "<group>";
@@ -221,10 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A5B2A519D5A19D0006E9F3 /* bazingalocal.xcdatamodeld in Sources */,
 				16A5B2A219D5A19D0006E9F3 /* AppDelegate.swift in Sources */,
-				FD448DE919D5BFA000690F27 /* Model.xcdatamodeld in Sources */,
+				FD448DE919D5BFA000690F27 /* bazingalocal.xcdatamodeld in Sources */,
+				FD448DED19D5E54E00690F27 /* bazingalocal.swift in Sources */,
 				16A5B2A719D5A19D0006E9F3 /* MasterViewController.swift in Sources */,
+				FD448DEB19D5DC7800690F27 /* Medication.swift in Sources */,
 				16A5B2A919D5A19D0006E9F3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,23 +435,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		16A5B2A319D5A19D0006E9F3 /* bazingalocal.xcdatamodeld */ = {
+		FD448DE719D5BFA000690F27 /* bazingalocal.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				16A5B2A419D5A19D0006E9F3 /* bazingalocal.xcdatamodel */,
+				FD448DE819D5BFA000690F27 /* bazingalocal.xcdatamodel */,
 			);
-			currentVersion = 16A5B2A419D5A19D0006E9F3 /* bazingalocal.xcdatamodel */;
+			currentVersion = FD448DE819D5BFA000690F27 /* bazingalocal.xcdatamodel */;
 			path = bazingalocal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		FD448DE719D5BFA000690F27 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FD448DE819D5BFA000690F27 /* Model.xcdatamodel */,
-			);
-			currentVersion = FD448DE819D5BFA000690F27 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

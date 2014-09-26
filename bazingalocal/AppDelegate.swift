@@ -20,6 +20,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = self.window!.rootViewController as UINavigationController
         let controller = navigationController.topViewController as MasterViewController
         controller.managedObjectContext = self.managedObjectContext
+        
+        // Ask User if it is OK to send Push Notifications
+        var notificationSettings:UIUserNotificationSettings =
+            UIUserNotificationSettings(forTypes:
+                UIUserNotificationType.Badge |
+                UIUserNotificationType.Alert |
+                UIUserNotificationType.Sound, categories: nil);
+        application.registerUserNotificationSettings(notificationSettings)
+        
+        if let options = launchOptions {
+            // Handle notification if it exists
+            //var notifications = launchOptions?.indexForKey(UIApplicationLaunchOptionsLocalNotificationKey)
+            var notification = launchOptions?.indexForKey(UIApplicationLaunchOptionsLocalNotificationKey)
+            
+            if ((notification) != nil) {
+                application.applicationIconBadgeNumber = 0;
+            }
+        }
+        
+        // This will be removed later
+        scheduleNotification()
+        
         return true
     }
 
@@ -31,6 +53,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    // This will be removed later
+    func scheduleNotification() {
+        var localNotification:UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "This is an alert from MedAlert"
+        localNotification.alertBody = "Wow it works!!"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+        
+        var medication: Medication = NSEntityDescription.insertNewObjectForEntityForName("Medication", inManagedObjectContext: self.managedObjectContext!) as Medication
+        
+        medication.name = "Viagra"
+        medication.notes = "The Pfizer Riser"
+        
+        var userInfo = [String:String]()
+        userInfo["medicationId"] = "foo"
+        
+        localNotification.userInfo = userInfo
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -45,6 +87,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        application.applicationIconBadgeNumber = 0
+        displayNotification(application, notification: notification)
+        
+        scheduleNotification()
+    }
+    
+    func displayNotification(application: UIApplication, notification: UILocalNotification) {
+        print("received local notification")
+        
+        var alert = UIAlertView()
+        alert.title = "Take your medication"
+        var medicationId = notification.userInfo
+        alert.message = notification.alertBody
+        alert.addButtonWithTitle("Dismiss")
+        alert.addButtonWithTitle("Taken")
+        
+        alert.show()
     }
 
     // MARK: - Core Data stack
