@@ -14,6 +14,7 @@
 		16A5B2AE19D5A19D0006E9F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B2AD19D5A19D0006E9F3 /* Images.xcassets */; };
 		16A5B2B119D5A19D0006E9F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B2AF19D5A19D0006E9F3 /* LaunchScreen.xib */; };
 		16A5B2BD19D5A19D0006E9F3 /* bazingalocalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5B2BC19D5A19D0006E9F3 /* bazingalocalTests.swift */; };
+		1FBC35C419D5F71500569829 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC35C319D5F71500569829 /* TaskManager.swift */; };
 		FD448DE919D5BFA000690F27 /* bazingalocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD448DE719D5BFA000690F27 /* bazingalocal.xcdatamodeld */; };
 		FD448DEB19D5DC7800690F27 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD448DEA19D5DC7800690F27 /* Medication.swift */; };
 		FD448DED19D5E54E00690F27 /* bazingalocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD448DEC19D5E54E00690F27 /* bazingalocal.swift */; };
@@ -41,6 +42,7 @@
 		16A5B2B619D5A19D0006E9F3 /* bazingalocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bazingalocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A5B2BB19D5A19D0006E9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A5B2BC19D5A19D0006E9F3 /* bazingalocalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bazingalocalTests.swift; sourceTree = "<group>"; };
+		1FBC35C319D5F71500569829 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskManager.swift; path = ../../MyMedicationList/MyMedicationList/TaskManager.swift; sourceTree = "<group>"; };
 		FD448DE819D5BFA000690F27 /* bazingalocal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bazingalocal.xcdatamodel; sourceTree = "<group>"; };
 		FD448DEA19D5DC7800690F27 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		FD448DEC19D5E54E00690F27 /* bazingalocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bazingalocal.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				16A5B2A119D5A19D0006E9F3 /* AppDelegate.swift */,
+				1FBC35C319D5F71500569829 /* TaskManager.swift */,
 				16A5B2A619D5A19D0006E9F3 /* MasterViewController.swift */,
 				FD448DE719D5BFA000690F27 /* bazingalocal.xcdatamodeld */,
 				FD448DEC19D5E54E00690F27 /* bazingalocal.swift */,
@@ -229,6 +232,7 @@
 				FD448DED19D5E54E00690F27 /* bazingalocal.swift in Sources */,
 				16A5B2A719D5A19D0006E9F3 /* MasterViewController.swift in Sources */,
 				FD448DEB19D5DC7800690F27 /* Medication.swift in Sources */,
+				1FBC35C419D5F71500569829 /* TaskManager.swift in Sources */,
 				16A5B2A919D5A19D0006E9F3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
